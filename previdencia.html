@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagems/Captura-de-tela-2025-01-22-215354.ico" type="image/x-icon">
+    <title>Cont&Prev</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <section class="home">
+    <header>
+        <div class="logo"><img src="imagems/logo.png" alt=""></div>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#footer">CONTATO</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    </section>
+    <section class="unique-profile-section">
+        <!-- Nome do Funcionário -->
+        <div class="unique-profile-header">
+          <h1 class="unique-profile-name">PREVIDÊNCIA</h1>
+        </div>
+      
+        <!-- Foto e apresentação -->
+        <div class="unique-profile-content">
+          <!-- Foto -->
+          <div class="unique-profile-photo">
+            <img src="#" alt="Foto do Funcionário">
+          </div>
+          <!-- Texto de apresentação -->
+          <div class="unique-profile-intro">
+            <p>
+                Eu me chamo Victor Hugo, atuo na área de tecnologia desde 2020 e comando o setor de Inovação Digital e Elétrica da Cont&Prev. Sou técnico em Desenvolvimento de Software, graduando em Análise e Desenvolvimento de Sistemas e profissionalizado em  Eletricidade pelo Senai de Barueri. Estou pronto para resolver problemas elétricos ou digitalizar suas ideias.
+            </p>
+          </div>
+        </div>
+      
+        <!-- Botão contratar -->
+        <div class="unique-hire-button-wrapper">
+          <button class="unique-hire-button" id="unique-hire-button-previdencia">Contratar agora</button>
+        </div>
+      
+        <!-- Serviços e projetos -->
+        <div class="unique-services-and-projects">
+          <!-- Serviços -->
+          <div class="unique-services-box">
+            <div class="unique-card front-card">
+              <h2>Serviços Digitais</h2>
+              <ul>
+                <li>Criação de Sites Institucionais <br> <p>apartir de 100 R$</p></li>
+                <li>Landing Pages <br> <p>apartir de 60 R$</p></li>
+                <li>Cartão de visita digital por QR code <br> <p>apartir de 50 R$</p></li>
+                <li>E-commerce <br> <p>apartir de 180 R$</p></li>
+                <li>Sites Responsivo <br> <p>apartir de 100 R$</p></li>
+                <li>Configuração de eletroeletrônicos <br> <p>apartir de 30 R$</p></li>
+              </ul>
+              <button class="unique-next-button">Serviços para MEI</button>
+            </div>
+          
+            <div class="unique-card back-card">
+              <button class="unique-back-button">⬅ Voltar</button>
+              <h2>Serviços de Elétrica</h2>
+              <ul>
+                <li>Instalação de dispositivos eletrônicos <br> <p>apartir de 60 R$</p></li>
+                <li>Reparos ou troce de tomadas e interrupetores <br> <p>apartir de 30 R$</p></li>
+                <li>Instalação de campainha <br> <p>apartir de 50 R$</p></li>
+                <li>Casa inteligente, alexa, tomada por wifi, led... <br> <p>apartir de 100 R$</p></li>
+                <li>Puxar iluminação em areas de trabalho <br> <p>apartir de 180 R$</p></li>
+              </ul>
+            </div>
+          </div>
+          <div id="custom-alert" class="custom-alert">
+            <div class="alert-content">
+              <p id="alert-message"></p>
+              
+            </div>
+          </div>
+      
+          <!-- Projetos -->
+          <div class="unique-projects-box">
+            <h2>Clientes e Projetos</h2>
+            <div class="unique-carousel">
+              <button class="unique-carousel-arrow left">&#171;</button>
+              <div class="unique-carousel-track">
+                <img src="imagems/img-somos.webp" alt="Imagem do Projeto 1">
+                <img src="imagems/icon-insta.jpg" alt="Imagem do Projeto 2">
+                <img src="imagems/digital-img.webp" alt="Imagem do Projeto 3">
+              
+                <!-- Contêiner do vídeo no carrossel -->
+                <div class="video-container">
+                  <video id="carousel-video" poster="imagems/Captura de tela 2025-01-22 011556.png" muted>
+                    <source src="imagems/WIN_20250122_01_53_06_Pro.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos.
+                  </video>
+                  <div class="overlay">
+                    <button class="play-button" onclick="openVideoModal('carousel-video')">▶</button>
+                  </div>
+                  
+                </div>
+              </div>
+              
+<button class="unique-carousel-arrow right">&#187;</button>
+<!-- Modal para reproduzir vídeo -->
+<div id="video-modal" class="video-modal">
+  <div class="modal-content">
+    <span class="close-modal" onclick="closeVideoModal()">✖</span>
+    <video id="modal-video" controls></video>
+  </div>
+</div>
+
+            <p class="unique-project-description">
+              Descrição do projeto correspondente à imagem exibida.
+            </p>
+          </div>
+         
+        </div>
+      </section>
+      
+      <script src="script.js"></script>
+</body>
+</html>
