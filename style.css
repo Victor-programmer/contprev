@@ -1,4 +1,14 @@
 /* Reset básico */
+@font-face {
+  font-family: "GD Sherpa Regular";
+  src: url("https://db.onlinewebfonts.com/t/0aee6008b82cde991ec28387169bb13e.eot");
+  src: url("https://db.onlinewebfonts.com/t/0aee6008b82cde991ec28387169bb13e.eot?#iefix") format("embedded-opentype"),
+       url("https://db.onlinewebfonts.com/t/0aee6008b82cde991ec28387169bb13e.woff2") format("woff2"),
+       url("https://db.onlinewebfonts.com/t/0aee6008b82cde991ec28387169bb13e.woff") format("woff"),
+       url("https://db.onlinewebfonts.com/t/0aee6008b82cde991ec28387169bb13e.ttf") format("truetype"),
+       url("https://db.onlinewebfonts.com/t/0aee6008b82cde991ec28387169bb13e.svg#GD Sherpa Regular") format("svg");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +17,7 @@
 
 body, html {
     height: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   
+    font-family: "GD Sherpa Regular", sans-serif;
     color: #fff;
     scroll-behavior: smooth;
 }
@@ -25,23 +34,35 @@ body, html {
 
 /* Header e navegação */
 header {
+  align-items: center;
+   background-color: #101010;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
+    flex-flow: row wrap;
+    font-family: ("GD Sherpa Regular", sans-serif);
     justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background: linear-gradient(to bottom, #04080d, #0a0f17);
-    position: fixed;
+    max-width: 100vw;
+    height: 4rem;
+    padding-inline-end: 51px;
+    padding-inline-start: 51px;
+    position: relative;
+    text-align: left;
+    z-index: 1050;
+
+}
+.hero {
+    background-image: url('imagems/fundo-home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
     width: 100%;
-    top: 0;
-    z-index: 100000000;
+    height: 100vh; /* Faz com que ocupe toda a tela */
 }
-.home{
-    background-color: #001f3f;
-}
+
 .logo img{
-    width: 13rem;
-    
-    margin-left: 100px;
+    max-width: 10rem;
+    margin-left: 60px;
     font-weight: bold;
     animation: fadeIn 1.5s ease;
 }
@@ -49,19 +70,16 @@ header {
 nav ul {
     list-style: none;
     display: flex;
+    margin-top: -5px;
 }
 
-nav ul li {
-    margin-top: 20px;
-    margin-left: 20px;
-}
 
 nav ul li a {
     color: rgb(241, 237, 237);
     text-decoration: none;
-    font-size: 1.2rem;
-    padding: 8px 16px;
-    transition: background 0.3s, transform 0.3s;
+    font-size: 1rem;
+    padding: 16px;
+    margin: 8px;
     border-radius: 4px;
 }
 
@@ -82,21 +100,13 @@ nav ul li a:hover {
     z-index: 1;
 }
 
-.hero video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
-    filter: blur(4px); /* Aplicando desfoque ao vídeo */
-    object-fit: cover;
-    z-index: -1;
-}
+
+
+
 
 .hero h1 {
     font-size: 4rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 6px;
     animation: fadeIn 2.5s ease;
      text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Sombra ao texto */
@@ -109,6 +119,7 @@ nav ul li a:hover {
     margin-bottom: 40px;
     line-height: 1.6;
     animation: fadeIn 3s ease;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Sombra ao texto */
 }
 
 .btn {
@@ -354,7 +365,7 @@ footer {
     margin-bottom: 15px;
     font-size: 17px;
     line-height: 1.4;
-    background-color: #dbdada;
+
     padding-left: 5px;
     
     border-left: 3px solid #00a9e0; /* Destaque na esquerda */
@@ -380,7 +391,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 120vh;
+    height: 140vh;
   }
   
   .custom-content-wrapper {
@@ -404,7 +415,7 @@ footer {
   
   .custom-text-container h1 {
     font-size: 24px;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
     
   }
   
@@ -412,9 +423,12 @@ footer {
     width: 100%;
     font-size: 20px;
     font-weight: 500;
-    margin-top: 70px;
+    margin-top: 60px;
+    padding: 0 40px;
   }
-  
+  .custom-text-container b{
+    color: #c7fb9cde;
+  }
   .custom-media-container {
     flex: 1;
     display: flex;
@@ -435,7 +449,7 @@ footer {
     
     padding: 30px;
     max-width: 1300px;
-    height: 730px;
+    height: 770px;
     width: 100%;
     backdrop-filter: blur(10px); /* Efeito de desfoque */
     color: #fff;
@@ -477,11 +491,12 @@ footer {
   
   .custom-feature-box h3 {
     font-size: 20px;
+    width: 200px;
     margin: 8px 15px 10px;
   }
   
   .custom-feature-box p {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.6;
     margin: 0;
   }
@@ -560,7 +575,6 @@ footer {
     align-items: center;
     position: relative;
     overflow: visible;
-     
   }
   
   .unique-profile-photo img {
@@ -1009,66 +1023,66 @@ footer {
 
 /*SEÇÃO QUEM SOMOS*/
 .about-us {
-    height: 80vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    gap: 20px;
-    background-color: #fff;
+  max-height: 95vh;
+  display: flex;
+  flex-direction: column; /* Para alinhar tudo em coluna */
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* Aumenta o espaçamento entre os elementos */
+  background-color: #fff;
+  padding: 50px 100px; /* Aumenta o espaço nas laterais */
 }
 
 .about-us .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex-wrap: wrap; /* Itens quebram em linhas em telas menores */
+  display: flex;
+  flex-direction: column; /* Empilha os elementos verticalmente */
+  align-items: center;
+  text-align: center;
+  max-width: 100%; /* Define um limite máximo */
+  width: 100%; /* Garante que ocupa todo o espaço possível */
 }
 
-
-
-.about-us .image {
-  
-    
-    text-align: center;
-    margin-top: 20px;
-   
+.about-us .text {
+  text-align: justify; /* Justifica o texto */
+  max-width: 1200px; /* Mesma largura da imagem */
+  width: 100%;
 }
 
 .about-us .text h2 {
-    font-size: 3em;
-    color: #7e918c;
-    margin-bottom: 20px;
+  font-size: 3em;
+  color: #7e918c;
+  margin-bottom: 20px;
+  text-align: center; /* Centraliza o título */
 }
 
 .about-us .text p {
-    box-sizing: border-box;
-    color: rgb(94, 94, 94);
-    display: block;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: normal;
-    line-height: 27px;
-    overflow-wrap: break-word;
-    text-align: left;
-    text-size-adjust: 100%;
-    text-transform: none;
-    unicode-bidi: isolate;
+  box-sizing: border-box;
+  color: rgb(94, 94, 94);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  word-break: break-word;
+}
+
+.about-us .image {
+  text-align: center;
 }
 
 .about-us .image img {
-    width: 1200px;
-    height: 200px;
-    border-radius: 30px;
-    margin-bottom: 50px;
-    object-fit: cover;
-    border: 8px solid #fff;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 200px;
+  border-radius: 30px;
+  margin-bottom: 50px;
+  object-fit: cover;
+  border: 8px solid #fff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
-
+@media screen and (max-width: 440px) {
+  .custom-media-container img {
+    display: none;
+}
+}
 /* Responsividade para telas menores */
 @media screen and (max-width: 768px) {
     .about-us {
@@ -1101,7 +1115,7 @@ footer {
 
 
 /* Responsividade */
-@media (max-width: 820px) {
+@media (max-width: 912px) {
     .hero h1 {
         font-size: 2.7rem;
         margin: 0px 20px;
@@ -1118,7 +1132,6 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-
     nav ul {
         flex-direction: column;
         background: linear-gradient(to bottom, #0a0e16,#0a0f17);
@@ -1252,7 +1265,7 @@ footer {
     
   }
   .custom-content-wrapper-before{
-    height: 84rem;
+    min-height: 88rem;
     padding: 15px;
   }
   .custom-template-section{
