@@ -111,7 +111,7 @@ function setupProjectCarousels() {
       ],
       antonio: [
         { 
-          text: "<h3>O planejamento previdenciário é uma análise técnica e personalizada que busca garantir ao segurado a aposentadoria mais vantajosa possível, tanto em valor quanto em tempo. Para isso, são considerados fatores como idade, tempo de contribuição, histórico de trabalho, atividades exercidas e possíveis falhas no cadastro previdenciário. O processo envolve a organização documental, a análise e correção do CNIS e o uso de estratégias legais, como o reconhecimento de tempo especial ou o pagamento de contribuições em atraso. O objetivo é assegurar um benefício otimizado, com segurança jurídica e previsibilidade.", 
+          text: "<h3>Planejamento previdenciario.</h3>O planejamento previdenciário é uma análise técnica e personalizada que visa garantir a aposentadoria mais vantajosa para o segurado, considerando fatores como idade, tempo de contribuição e histórico profissional. Envolve a organização de documentos, correção do CNIS e uso de estratégias legais, como o reconhecimento de tempo especial ou contribuições em atraso, com foco em um benefício mais seguro e vantajoso.", 
           link: null
         },
         
