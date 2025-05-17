@@ -50,6 +50,11 @@ header {
     z-index: 1050;
 
 }
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
 .hero {
     background-image: url('imagems/fundo-home.jpg');
     background-repeat: no-repeat;
@@ -1400,11 +1405,7 @@ footer {
   border: 8px solid #fff;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
-@media screen and (max-width: 440px) {
-  .custom-media-container img {
-    display: none;
-}
-}
+
 /* Responsividade para telas menores */
 @media screen and (max-width: 768px) {
     .about-us {
@@ -1557,7 +1558,7 @@ footer {
   }
 
   .custom-text-container p {
-    font-size: 0.9rem; /* Texto menor */
+    font-size: 1.1rem; /* Texto menor */
   }
 
   .custom-feature-box h3 {
@@ -1577,7 +1578,7 @@ footer {
     padding: 15px;
   }
   .custom-template-section{
-    height: 90rem;
+    height: 100rem;
     
   }
   .custom-content-wrapper{
@@ -1585,7 +1586,7 @@ footer {
     display:block;
   }
   .custom-content-wrapper p{
-   font-size: 1.1rem;
+   font-size: 1rem;
    text-align: center;
    font-weight: 300;
     margin-top: 4rem;

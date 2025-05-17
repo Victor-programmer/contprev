@@ -12,21 +12,25 @@
 function setupMobileMenu() {
   const hamburger = document.getElementById('hamburger');
   const navList = document.getElementById('nav-list');
+  const body = document.body;
 
   if (hamburger && navList) {
-    hamburger.addEventListener('click', function() {
+    hamburger.addEventListener('click', function () {
       this.classList.toggle('active');
       navList.classList.toggle('open');
+      body.classList.toggle('no-scroll'); // <- trava/destrava a rolagem
     });
 
     document.querySelectorAll('#nav-list li').forEach(item => {
-      item.addEventListener('click', function() {
+      item.addEventListener('click', function () {
         hamburger.classList.remove('active');
         navList.classList.remove('open');
+        body.classList.remove('no-scroll'); // <- destrava a rolagem ao clicar em item
       });
     });
   }
 }
+
 
 // 2. Cards de Serviços (toggleDetails)
 function setupServiceCards() {
