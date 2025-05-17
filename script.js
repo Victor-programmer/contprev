@@ -98,8 +98,6 @@ function setupProjectCarousels() {
           text: "Criei um site interativo especialmente para a filha de um cliente, com o objetivo de tornar o presente de aniversário ainda mais especial e inesquecível, onde a pelúcia se apresenta e dá dicas de outro presente que havia escondido dentro da espuma dele.",
           link: "https://victor-programmer.github.io/Tartaruguinha/"
         },
-        { text: "Projeto de Victor 2", link: null },
-        { text: "Vídeo de Victor", link: null }
       ],
       leandro: [
         { 
