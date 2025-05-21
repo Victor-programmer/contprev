@@ -240,11 +240,11 @@ function setupPartnersCarousel() {
       site: ""
     },
     {
-      nome: "Vitor",
+      nome: "Vitor Brito",
       imagem: "imagems/parcerias/advogado.jpg",
       descricao: "Advogado",
       contato: "https://wa.me/5511966562204",
-      site: ""
+      site: "https://vitorbrito.adv.br"
     },
     {
       nome: "Cristiano",
@@ -257,14 +257,14 @@ function setupPartnersCarousel() {
       nome: "Gilberto",
       imagem: "imagems/parcerias/carreto.webp",
       descricao: "Carretos e Mudanças",
-      contato: "5511960865827 ",
+      contato: "https://wa.me/5511960865827",
       site: ""
     },
     {
       nome: "Adriana",
       imagem: "imagems/parcerias/bolodoces.jpg",
       descricao: "Bolos, Doces e Salgados",
-      contato: "5511963465987",
+      contato: "https://wa.me/5511963465987",
       site: ""
     }
   ];
