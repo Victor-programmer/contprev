@@ -236,7 +236,7 @@ function setupPartnersCarousel() {
       nome: "Júlio Quilici ",
       imagem: "imagems/parcerias/engenharia.jpg",
       descricao: "Engenharia Civil<br>Obras / Projetos / Acabamentos",
-      contato: "https://wa.me/11976952692",
+      contato: "https://wa.me/5511976952692",
       site: ""
     },
     {
