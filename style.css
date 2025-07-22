@@ -1148,30 +1148,42 @@ footer {
   }
   
   /* Botão contratar */
-  .unique-hire-button-wrapper {
-    text-align: end;
-    margin-bottom: 20px;
-   
-   
+  /* Container principal (contém 1 ou 2 botões) */
+.unique-hire-button-wrapper {
+  display: flex;
+  justify-content: flex-end; /* Alinha os botões à direita */
+  gap: 20px; /* Espaço entre botões (ignorado se houver apenas um) */
+  margin-bottom: 20px;
+}
 
-  }
-  
-  .unique-hire-button {
-    padding: 10px 30px;
-    animation:
-    buttonFloat 1.5s infinite ease-in-out;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra */
-    font-size: 2rem;
-    width: 63%;
-    font-weight: 600;
-    height: 5rem;
-    letter-spacing: 2px;
-    color: #fff;
-    background-color: #307192;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-  }
+/* Estilo base dos botões (compartilhado) */
+.unique-hire-button,
+.Breve {
+  animation: buttonFloat 1.5s infinite ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  font-weight: 600;
+  height: 5rem;
+  letter-spacing: 2px;
+  color: #fff;
+  background-color: #307192;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 10px 30px; /* Largura mínima */
+}
+
+/* Se houver APENAS 1 botão (usa :only-child) */
+.unique-hire-button-wrapper button:only-child {
+  width: 60%; /* Ajusta ao conteúdo */
+}
+
+/* Se houver 2 botões (largura fixa) */
+.unique-hire-button-wrapper button {
+  width: 30%; /* Largura igual para ambos */
+}
+
+/* Animação */
   @keyframes buttonFloat{
     50%{
         transform:translateY(-10%);
@@ -1481,7 +1493,23 @@ footer {
       flex: 1 0 100%;
       height: auto; /* Remove a altura fixa */
     }
-  }
+    .unique-hire-button-wrapper {
+        justify-content: center; /* Centraliza em mobile */
+        gap: 15px;
+        
+       
+      }
+      
+      .unique-hire-button,.Breve {
+         font-size:1rem;
+         font-weight: 100;
+         height: auto;
+        width: 100% !important; /* Força largura total */
+      }
+      
+    }
+  
+  
   
 /* Responsividade */
 @media (max-width: 768px) {
@@ -1801,10 +1829,7 @@ footer {
     order: 1;
     margin-top: 30px;
   }
-  .unique-hire-button{
-    width: 100%;
-    font-size: 1.5rem;
-  }
+
   
   .unique-profile-section{
     padding: 30px;
