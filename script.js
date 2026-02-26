@@ -266,6 +266,13 @@ function setupPartnersCarousel() {
       descricao: "Bolos, Doces e Salgados",
       contato: "https://wa.me/5511963465987",
       site: ""
+    },
+    {
+      nome: "Abimael Arcanjo Pinturas",
+      imagem: "https://019c7142-4976-7c85-930c-30e249145203.mochausercontent.com/logo.jpg",
+      descricao: "Pinturas, Restaurações, Acabamento",
+      contato: "https://wa.me/5511951408202",
+      site: ""
     }
   ];
 
